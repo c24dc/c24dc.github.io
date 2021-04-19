@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+<style type="text/css">
+
+body{
+
+	background: url(https://i.pinimg.com/originals/91/c1/ec/91c1ec2b56af8a1599a6457b8d12f7e7.png)
+	background-repeat:no-repeat;
+	background-size: auto;
+}
+		/*.nyc {
+			width:100%;
+			height:1000px;
+			background-image:url(https://i.pinimg.com/originals/91/c1/ec/91c1ec2b56af8a1599a6457b8d12f7e7.png);
+			background-repeat:no-repeat;
+			background-position:center;
+			}*/
+
+		p {
+			font-family: 'Playfair Display', serif;
+		}
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
+
+		table {
+			width:100%;
+			border-spacing: 15px;
+		}
+
+		#projects{
+			font-family: 'Playfair Display', serif;
+			width:400px;
+			height:400px;
+			line-height: 400px;
+			background-color:#e8c7b0;
+			text-align: center;
+		}
+		#entries{
+			font-family: 'Playfair Display', serif;
+			width:400px;
+			height:400px;
+			line-height: 400px;
+			background-color:#e8c7b0;
+			text-align: center;
+		}
+		#aboutMe{
+			font-family: 'Playfair Display', serif;
+			width:400px;
+			height:400px;
+			line-height: 400px;
+			background-color:#e8c7b0;
+			text-align: center;
+		}
+
+	</style>
+
+</head>
+<body style="background-image:url(https://i.pinimg.com/originals/75/f1/f9/75f1f9e14d2a7bae1d061c95ea26c878.jpg)">
+
+	<table>
+		<tr>
+			<td>
+				<a href="file:///Users/student/Desktop/repositories/c24dc.github.io/projects.html">
+				<div id="projects">projects</div> </a>
+			</td>
+			<td>
+				<a href="file:///Users/student/Desktop/repositories/c24dc.github.io/journal.html">
+				<div id="entries">entries</div></a>
+			</td>
+			<td>
+				<div id="aboutMe">extras</div>
+			</td>
+		</tr>
+	</table>
+
+<!-- <div class="nyc"></div> -->
+
+</body>
+</html>

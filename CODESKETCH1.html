@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+body{
+
+	background-color:black;
+	background-repeat:no-repeat;
+	background-size: auto;
+}
+		
+
+		p {
+			font-family: 'Playfair Display', serif;
+		}
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
+
+		table {
+			width:100%;
+			border-spacing:45px;
+		}
+
+		#one{
+			font-family: 'Playfair Display', serif;
+			width:700px;
+			height:700px;
+			border-radius: 400px;
+			line-height: 700px;
+			background-color:#e8c7b0;
+			text-align: center;
+			margin: auto;
+		}
+		/*#two{
+			font-family: 'Playfair Display', serif;
+			width:200px;
+			height:200px;
+			line-height: 200px;
+			background-color:black;
+			text-align: center;
+		}
+		#three{
+			font-family: 'Playfair Display', serif;
+			width:200px;
+			height:200px;
+			line-height: 200px;
+			background-color:black;
+			text-align: center;
+		}
+*/
+	</style>
+</head>
+
+
+
+</p>
+
+
+	<table>
+		<tr>
+			<td>
+				<div id="one">move your mouse, then click!</div> </a>
+			</td>
+			<td>
+				<div id="two">two</div></a>
+			</td>
+			<td>
+				<div id="three">three</div>
+			</td>
+		</tr>
+	</table>
+
+<script type="text/javascript">
+	
+	var box = document.getElementById("one");
+
+	document.addEventListener(
+
+		"click", function(event){
+			console.log(event.clientX,event.clientY)
+			one.style.backgroundColor = "rgb("+event.clientX + "," + event.clientY+"," + 50 +")"
+
+
+		}
+		)
+
+</script
+
+</body>
+</html>
