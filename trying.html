@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#bird{
+			width:1300px;
+			height:700px;
+			border:1px solid black;
+			background-size:cover;
+		}
+	</style>
+</head>
+<body>
+
+<center><div id="bird">
+
+</div></center>
+
+<audio id="fall" src="fall.mp3"></audio>
+
+<audio  id="winter" src="winter.mp3"></audio>
+
+<audio  id="spring" src="spring.mp3"></audio>
+
+<audio  id="summer" src="summer.mp3"></audio>
+
+<script type="text/javascript">
+
+
+	
+	var bird = document.getElementById("bird");
+var x = 0;
+
+bird.addEventListener("click", function(){
+	x = x+1;
+	console.log(x);
+
+	if (x%4 == 0) {
+		summer.play();
+		fall.pause();
+		winter.pause();
+		spring.pause();
+		bird.style.backgroundColor = "green";
+		bird.style.backgroundImage = "url(summer.png)";
+	}
+
+
+	else if (x%4 == 1) {
+		bird.style.backgroundColor = "blue";
+		summer.pause();
+		fall.play();
+		winter.pause();
+		spring.pause();
+		bird.style.backgroundImage = "url(fall.png)";
+	}
+
+	else if (x%4 == 2) {
+		bird.style.backgroundColor = "yellow";
+		summer.pause();
+		fall.pause();
+		winter.play();
+		spring.pause();
+		bird.style.backgroundImage = "url(winter.png)";
+	}
+
+	else if (x%4 == 3) {
+		bird.style.backgroundColor = "pink";
+		summer.pause();
+		fall.pause();
+		winter.pause();
+		spring.play();
+		bird.style.backgroundImage = "url(spring.png)";
+	}
+
+})
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#bird{
+			width:200px;
+			height:200px;
+			border:1px solid black;
+			background-size:cover;
+		}
+	</style>
+</head>
+<body>
+
+<center><div id="bird">
+
+</div></center>
+
+<audio id="tufted" src="tufted.mp3"></audio>
+
+<audio  id="nuthatch" src="nuthatch.mp3"></audio>
+
+<script type="text/javascript">
+
+
+	
+	var bird = document.getElementById("bird");
+var x = 0;
+
+bird.addEventListener("click", function(){
+	x = x+1;
+	console.log(x);
+
+	if (x%4 == 0) {
+		bird.style.backgroundColor = "green";
+		bird.style.backgroundImage = "url(nuthatch.png)";
+	}
+
+
+	else if (x%4 == 1) {
+		bird.style.backgroundColor = "blue";
+		 bird.style.backgroundImage = "url(tufted.png)";
+	}
+
+	else if (x%4 == 2) {
+		bird.style.backgroundColor = "purple";
+		 bird.style.backgroundImage = "url(tufted.png)";
+	}
+
+	else if (x%4 == 3) {
+		bird.style.backgroundColor = "yellow";
+		 bird.style.backgroundImage = "url(tufted.png)";
+
+})
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+    body {
+        background-image: url("sky.png");
+        background-repeat: no-repeat;
+
+    }
+
+    .balloon {
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        display: inline-block;
+        font-family: 'Fascinate', cursive;
+        text-align: center;
+        font-size: 20px;
+        margin: 20px;
+        position: relative;
+        display: inline-block;
+        margin-left: 30px;
+        transition: 1s;
+        color: black;
+    }
+
+    .pic {
+        background-image: url("balloon.png");
+
+
+    }
+
+    h1 {
+        font-family: 'Fascinate', cursive;
+        position: relative;
+        color: black;
+    }
+
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>THE BIRTHDAY CARD I NEVER GAVE YOU:</h1>
+    <script type="text/javascript">
+    function makeBalloon(i) {
+
+
+        var balloon = document.createElement("balloon");
+
+        document.body.appendChild(balloon);
+        balloon.classList.add("balloon");
+        balloon.classList.add("pic");
+        document.body.appendChild(balloon);
+
+        balloon.addEventListener("click", function() {
+
+            balloon.classList.remove("pic");
+
+            balloon.innerHTML = array[i];
+            
+        });
+
+
+    };
+
+    var array = ["I can always trust you",
+        "you are always willing to try new things",
+        "you are outgoing",
+        "you are easy to talk to",
+        "you are funny",
+        "you get along with my family",
+        "you live with me",
+        "you are willing to play chess with me",
+        "you are so nice to me",
+        "HAPPY BELATED BIRTHDAY",
+        
+    ];
+
+    for (var i = 0; i <= array.length - 1; i++) {
+        makeBalloon(i);
+    }
+    </script>
+</body>
+
+</html>

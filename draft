@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div id="etien"></div>
+    <script type="text/javascript">
+        function hello() {
+
+            console.log("hi daisy!")
+
+
+        }
+        
+var etien = document.getElementById('etien')
+
+var breakfast = ["a","b","c","d","e","f","g","h"]
+    </script>
+</body>
+</html>
