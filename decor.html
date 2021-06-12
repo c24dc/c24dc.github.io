@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+    #picture {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+
+    }
+    </style>
+
+</head>
+<body style="background-image:url(https://i.pinimg.com/564x/86/05/e1/8605e149e302aa22a3ab94ea64954e13.jpg)">
+
+
+<body>
+
+    <center>
+        <h1>What bubble tea should you have?</h1>
+        <div id="picture"></div>
+        <script type="text/javascript">
+        var pictures = [
+            
+            "url(https://www.chinasichuanfood.com/wp-content/uploads/2014/10/boba-milk-tea-12.jpg)",
+            "url(https://resources.matcha-jp.com/resize/720x2000/2019/09/13-86011.jpeg)", 
+            "url(https://www.rachelcooksthai.com/wp-content/uploads/2013/07/thai-tea-boba-2.jpg)", 
+            "url(https://i.pinimg.com/originals/c4/e3/26/c4e326d13bd4ca97b6133c9335e5d14f.jpg)",
+        "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLyyb-UnNgXXv72zPoOENqkB2JBiz8GQs5sQ&usqp=CAU)",
+         "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlzKZLdzA-lvSy9w_butDtJPfDiAWA9PAlbQ&usqp=CAU)",
+
+            ] ;
+
+
+        var box = document.getElementById('picture');
+
+
+
+        box.addEventListener("click", function() {
+            var random = Math.round(5*Math.random());
+            console.log(pictures[random])
+            box.style.backgroundImage=pictures[random];
+            box.style.backgroundSize= "contain";
+            box.style.backgroundRepeat= "no-repeat";
+            box.style.backgroundPosition= "center";
+
+        })
+        </script>
+    </center>
+</body>
+
+</html>

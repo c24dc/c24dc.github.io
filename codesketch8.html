@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SONG ASSOCIATION</title>
+    <style type="text/css">
+    /*body {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image:url(song.png);
+    }
+*/
+    #bird{
+            width:1400px;
+            height:750px;
+            border:1px solid black;
+            background-size:cover;
+            background-image:url(song.png);
+        }
+    #picture {
+        width: 600px;
+        height: 180px;
+        background-color: #ffdab3;
+        font-size: 110px;
+
+
+
+    }
+    </style>
+
+</head>
+<body>
+
+
+
+<body>
+
+    <center>
+        <h1></h1>
+        <div id="bird">
+            
+            <center> <div id="picture"></div> </center>
+        </div>
+        
+
+        <script type="text/javascript">
+        var pictures = [
+        	
+        	"sun",
+        	"drive", 
+        	"rain", 
+        	"blood",
+            "made",
+            "*any month*",
+            "water",
+            "insane",
+            "*any day of the week*",
+            "winner",
+            "gold",
+            "diamond",
+            "sick",
+            "dream",
+            "ride",
+            "scream",
+            "ice",
+            "kind",
+            "maybe",
+            "*any day of the week*",
+            "*any shape*",
+            "call",
+            "hurt",
+            "past",
+            "thinking",
+            "USA",
+            "*any city*",
+            "famous",
+            "gun",
+            "right",
+            "late",
+            "*any color*",
+            "pretty",
+            "face",
+            "car",
+            "fast",
+            "good",
+            "rather",
+            "kids",
+            "run",
+            "*any year*",
+            "hate",
+            "mad",
+            "wanna",
+            "*any name*",
+            "moon",
+            "candy",
+            "time",
+            "life",
+            "ring",
+            "love",
+            "same",
+            "never",
+            "heart",
+            "wish",
+            "paper",
+            "best",
+            "next",
+            "good",
+            "nice",
+            "better",
+            "worse",
+            "end",
+            "send",
+            "need",
+            "want",
+            "fire",
+            "mind",
+            "long",
+            "know",
+            "phone",
+            "gone",
+            "night",
+            "late",
+            "thing",
+             "friend",
+            "talk",
+            "same",
+            "hurt",
+            "*real or fake*"
+
+
+        	] ;
+
+
+        var box = document.getElementById('picture');
+
+
+
+        box.addEventListener("click", function() {
+            var random = Math.round(69*Math.random());
+            console.log(pictures[random])
+            box.innerText=pictures[random];
+            box.style.backgroundSize= "contain";
+            box.style.backgroundRepeat= "no-repeat";
+            box.style.backgroundPosition= "center";
+
+        })
+        </script>
+    </center>
+</body>
+
+</html>
